@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="Interfacev2wcs.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Interfacev2wcs"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="1600" Height="900">
+
+    <Grid Background="#FF555353" Width="1600" Height="900">
+        <Button x:Name="ON" Content="ON" Height="387" Margin="220,403,905,0" VerticalAlignment="Top" Click="ON_Click" FontSize="80" HorizontalAlignment="Stretch" Background="#FF382828"/>
+        <Button x:Name="OFF" Content="OFF" Height="387" Margin="885,404,220,0" VerticalAlignment="Top" Click="OFF_Click" FontSize="80" Background="#FF382828" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" HorizontalAlignment="Stretch">
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="0.179"/>
+            </Button.RenderTransform>
+        </Button>
+        <TextBlock HorizontalAlignment="Left" Height="319" Margin="425,57,0,0" Text="Witamy!" TextWrapping="Wrap" VerticalAlignment="Top" Width="970" FontSize="200" FontWeight="Bold"/>
+
+    </Grid>
+</Page>

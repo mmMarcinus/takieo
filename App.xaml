@@ -1,0 +1,6 @@
+﻿<Application
+    x:Class="Interfacev2wcs.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Interfacev2wcs">
+</Application>
