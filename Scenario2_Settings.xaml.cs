@@ -22,7 +22,7 @@ namespace Interfacev2wcs
     /// </summary>
     public sealed partial class Scenario2_Settings : Page
     {
-        string zmienionykolor;
+        string zmienionykolor="";
         public Scenario2_Settings()
         {
             this.InitializeComponent();

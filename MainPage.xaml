@@ -1,4 +1,4 @@
-﻿<Page
+﻿<Page HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
     x:Class="Interfacev2wcs.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -6,16 +6,21 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="1600" Height="900">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="1550" Height="900">
 
-    <Grid Background="#FF555353" Width="1600" Height="900">
-        <Button x:Name="ON" Content="ON" Height="387" Margin="220,403,905,0" VerticalAlignment="Top" Click="ON_Click" FontSize="80" HorizontalAlignment="Stretch" Background="#FF382828"/>
-        <Button x:Name="OFF" Content="OFF" Height="387" Margin="885,404,220,0" VerticalAlignment="Top" Click="OFF_Click" FontSize="80" Background="#FF382828" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" HorizontalAlignment="Stretch">
+    <Grid Background="#FF555353" Width="1550" Height="900" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="870*"/>
+            <RowDefinition Height="24*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="ON" Content="ON" Height="387" Margin="180,408,890,0" VerticalAlignment="Top" Click="ON_Click" FontSize="80" HorizontalAlignment="Stretch" Background="#FF382828"/>
+        <Button x:Name="OFF" Content="OFF" Height="384" Margin="860,409,218,0" VerticalAlignment="Top" Click="OFF_Click" FontSize="80" Background="#FF382828" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" HorizontalAlignment="Stretch">
             <Button.RenderTransform>
                 <CompositeTransform Rotation="0.179"/>
             </Button.RenderTransform>
         </Button>
-        <TextBlock HorizontalAlignment="Left" Height="319" Margin="425,57,0,0" Text="Witamy!" TextWrapping="Wrap" VerticalAlignment="Top" Width="970" FontSize="200" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="319" Margin="375,59,0,0" Text="Witamy!" TextWrapping="Wrap" VerticalAlignment="Top" Width="970" FontSize="200" FontWeight="Bold"/>
 
     </Grid>
 </Page>

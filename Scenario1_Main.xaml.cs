@@ -35,6 +35,7 @@ namespace Interfacev2wcs
     /// </summary>
     public sealed partial class Scenario1_Main : Page
     {
+        
         double Lat,Lon;
         string kolorystyka;
         [Windows.Foundation.Metadata.ContractVersion(typeof(Windows.Foundation.UniversalApiContract), 65536)]
@@ -82,7 +83,7 @@ namespace Interfacev2wcs
               Ustawienia.Background = new SolidColorBrush(Windows.UI.Colors.DarkRed);
               wroc.Background = new SolidColorBrush(Windows.UI.Colors.DarkRed);
               Czastb.Foreground = new SolidColorBrush(Windows.UI.Colors.DarkRed);
-              Time.Foreground = new SolidColorBrush(Windows.UI.Colors.DarkRed);
+              Timetb.Foreground = new SolidColorBrush(Windows.UI.Colors.DarkRed);
               Bateria.Background = new SolidColorBrush(Windows.UI.Colors.DarkGray);
               Bateriatb.Foreground = new SolidColorBrush(Windows.UI.Colors.DarkRed);
               polaczenie.Foreground = new SolidColorBrush(Windows.UI.Colors.DarkRed);
